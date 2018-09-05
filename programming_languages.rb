@@ -6,11 +6,13 @@ def reformat_languages(languages)
     lang.each do |lang, type|
       type.each do |type_key, type_value|
         binding.pry
-        #if :sty ==
-        result[lang] = {
+        if result[lang][:style] == nil
+          result[lang] = {
           type_key => type_value,
           :style => [style]
-        }
+           }
+        else
+          
         
       end
    end
