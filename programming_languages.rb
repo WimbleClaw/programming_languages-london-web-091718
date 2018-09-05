@@ -8,7 +8,7 @@ def reformat_languages(languages)
         binding.pry
         result[lang] = {
           type_key => type_value,
-          :style => style
+          :style => [style]
         }
         
       end
