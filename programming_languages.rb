@@ -13,7 +13,7 @@ def reformat_languages(languages)
            }
         else
            result[lang][:style] << style
-           }
+           
         end
       end
    end
