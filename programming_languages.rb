@@ -1,3 +1,16 @@
+require 'pry'
+
 def reformat_languages(languages)
-  # your code here
+  result = {}
+  languages.each do |style, lang|
+    lang.each do |lang, type|
+
+       result[lang] = {
+          :type => lang[:type],
+          :style => [style]
+        }
+        binding.pry
+   end
+  end
+  result
 end
