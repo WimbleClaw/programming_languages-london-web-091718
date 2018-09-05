@@ -12,9 +12,7 @@ def reformat_languages(languages)
           :style => [style]
            }
         else
-           result[lang] = {
-          type_key => type_value,
-          :style << style
+           result[lang][:style] << style
            }
         end
       end
