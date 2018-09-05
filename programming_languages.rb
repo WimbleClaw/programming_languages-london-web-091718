@@ -7,7 +7,7 @@ def reformat_languages(languages)
       type.each do |type_key, type_value|
         binding.pry
         result[lang] = {
-          :type_key => lang[:type_value],
+          :type => lang[:type_value],
           :style => [style]
         }
         
